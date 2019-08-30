@@ -1,8 +1,20 @@
+@font-face{
+	font-family: 'CeraPro';
+	src: url('../fonts/cpregular.woff') format('woff');
+	font-weight: normal;
+}
+
+@font-face{
+	font-family: 'CeraProBold';
+	src: url('../fonts/cpbold.woff') format('woff');
+	font-weight: normal;
+}
+
 body{
 	margin:0;
 	padding: 0;
 	overflow-x: hidden;
-	font-family: 'Cera Pro', sans-serif;
+	font-family: 'CeraPro', sans-serif;
 	overflow-y: scroll;
 }
 
