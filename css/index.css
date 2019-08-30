@@ -1,0 +1,433 @@
+/*@font-face{
+	font-family: 'CeraPro';
+	src: url('../fonts/cpregular.otf') format("opentype");
+}*/
+
+body{
+	animation: fadein 2s;
+}
+
+body,html{
+	overflow-x: hidden;
+	font-family: 'Cera Pro', sans-serif;
+	margin:0;
+	padding: 0;
+	transition: all 0.3s ease-in;
+	user-select: none;
+	text-decoration: none;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+@keyframes fadein{
+	from{
+		opacity:0;
+	}
+
+	to{
+		opacity: 1;
+	}
+}
+
+#topbar{
+	width:100%;
+	height: 10vh;
+}
+
+#sidebar{
+	position: fixed;
+	top: 0;
+	left:0;
+	width:0;
+	height: 100vh;
+	background-color: #111;
+	z-index: 1;
+	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+  	display: flex;
+  	flex-direction: column;
+  	padding-top: 100px;
+}
+
+.quicklink{
+	color: white;
+	margin-bottom: 10px;
+	height: 6vh;
+	font-size: 25px;
+	padding-left: 2vw;
+	padding-top: 12px;
+	vertical-align: middle;
+}
+
+#topmost{
+	margin-bottom: 50px;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+.quicklink:hover{
+	cursor: pointer;
+	background-color: #362f2e;
+}
+
+#topmost:hover{
+	cursor: default;
+	background-color: #111;
+}
+
+#hamburgermenu{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	left:2vw;
+	top: 30px;
+	font-size: 40px;
+	z-index: 2;
+}
+
+#options{
+	height: 40px;
+	width: 40vw;
+	position: relative;
+	left: 60vw;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clickoption{
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 22px;
+	padding: 4px;
+}
+
+.clickoption:hover{
+	transition: ease-in 0.5s;
+	border-bottom: 1px solid #111;
+	cursor: pointer;
+}
+
+#hamburgermenu:hover{
+	cursor: pointer;
+}
+
+
+.heading{
+	width:100vw;
+	height: 92vh;
+	display: flex;
+}
+
+.landingtext{
+	width: 55vw;
+	height: 88vh;
+}
+
+.title{
+	width: 50vw;
+	height: 10vh;
+	font-size: 65px;
+	position: relative;
+	top: 25vh;
+	left: 6vw;
+	color: #424242;
+	font-weight: bolder;
+}
+
+.subtitle{
+	width: 35vw;
+	height: 10vh;
+	font-size: 20px;
+	position: relative;
+	top: 28vh;
+	left: 6vw;
+	color: #919191;
+}
+
+.button{
+	position: relative;
+	top: 25vh;
+	left: 6vw;
+	width: 8vw;
+	height: 6vh;
+	border: 2px solid #ff7675;
+	background: #ff7675;
+	color: white;
+	border-radius: 10px 10px 10px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.05);
+}
+
+
+.exp{
+	top: 18.5vh;
+	left:15vw;
+	background:white;
+	border: 2px solid #757575;
+	color: #757575;
+}
+
+.button:hover{
+	transform:scale(1.05);
+	cursor:pointer;
+}
+
+
+.image{
+	margin-right: 50px;
+	padding-top: 90px;
+	width: 45vw;
+	height: 80vh;
+	background: url("../SC.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.headingtext{
+	position: absolute;
+	font-weight: bold;
+	top:30%;
+	left: 15%;
+	color: white;
+	width: 50vw;
+	height: 30vh;
+	font-size: 40px;
+	border:1px solid black;
+}
+
+#about{
+	width: 100vw;
+	height: 47vh;
+	background-color: #f7f7f7;
+}
+
+#intro{
+	width: 100vw;
+	font-size: 45px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+
+#subintro{
+	font-size: 25px;
+	color: grey;
+}
+
+#introtext{
+	margin-top: 40px;
+	height: 15vh;
+	padding-left: 25%;
+	padding-right: 25%;
+}
+
+#menu{
+	height: 92vh;
+	width: 100vw;
+	background-color: white;
+}
+
+
+#start{
+	height:20vh; 
+	text-align:center;
+	font-size: 45px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+
+#subtext{
+	font-weight: lighter;
+	color: grey;
+	font-size: 25px;
+}
+
+.row1{
+	position: relative;
+	top: 0vh;
+	display: flex;
+	left:13%;
+	width: 70vw;
+	height: 200px;
+}
+
+.row2{
+	display: flex;
+	position: relative;
+	top: 5vh;
+	left:13%;
+	width: 70vw;
+	height: 200px;
+}
+
+.box{
+	background: white;
+	display: flex;
+	flex-direction: column;
+	margin:10px;
+	width: 17.5vw;
+	height: 200px;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.20);
+}
+
+.box:hover{
+	transform: scale(1.05);
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in;
+}
+
+.icon{
+	height: 140px;
+	width: 17.5vw;
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.text{
+	height: 40px;
+	width: 17.5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#wordsearch{
+	background: url("../images/search.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#validity{
+	background: url("../images/tick.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#resources{
+	background: url("../images/documents.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#wotd{
+	background: url("../images/wotd.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#tourney{
+	background: url("../images/trophy.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#prac{
+	background: url("../images/practice.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#challenge{
+	background: url("../images/challenge.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#tutorials{
+	background: url("../images/tutorial.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#contactus{
+	height: 55vh;
+	background-color: #f7f7f7;
+	width: 100vw;
+}
+
+#socialhead{
+	height:20vh; 
+	text-align:center;
+	font-size: 45px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+
+#socialsub{
+	font-weight: lighter;
+	color: grey;
+	font-size: 25px;
+}
+
+#social{
+	height: 30vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.socialicon{
+	margin:12px 18px;
+	width: 50px;
+	height: 50px;
+}
+
+.socialicon:hover{
+	transform: scale(1.05);
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in;
+}
+
+.ig{
+	width: 10vw;
+	height: 16vh;
+	background: url("../images/ig.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.yt{
+	width: 10vw;
+	height: 16vh;
+	background: url("../images/youtube.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.mail{
+	width: 10vw;
+	height: 16vh;
+	background: url("../images/gmail.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#footer{
+	height: 8vh;
+	width: 100vw;
+	background: #111;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}

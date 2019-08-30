@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/wordsearchandvalidity.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+	<script type="text/javascript" src="wordlists/twos.js"></script>
+	<script type="text/javascript" src="wordlists/threes.js"></script>
+	<script type="text/javascript" src="wordlists/fours.js"></script>
+	<script type="text/javascript" src="wordlists/fives.js"></script>
+	<script type="text/javascript" src="wordlists/sixes.js"></script>
+	<script type="text/javascript" src="wordlists/sevens.js"></script>
+	<script type="text/javascript" src="wordlists/eights.js"></script>
+	<script type="text/javascript" src="wordlists/nines.js"></script>
+	<script type="text/javascript" src="wordlists/tens.js"></script>
+	<script type="text/javascript" src="wordlists/elevens.js"></script>
+	<script type="text/javascript" src="wordlists/twelves.js"></script>
+	<script type="text/javascript" src="wordlists/thirteens.js"></script>
+	<script type="text/javascript" src="wordlists/fourteens.js"></script>
+	<script type="text/javascript" src="wordlists/fifteens.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+	<title>Word Checker</title>
+</head>
+<body>
+		<div id="sidebar">
+			<div class="quicklink" id="topmost">QUICK LINKS</div>
+			<a href="index.html#topbar"><div class="quicklink">HOME</div></a>
+			<a href="validity.html"><div class="quicklink">Check words</div></a>
+			<a href="wordsearch.html"><div class="quicklink">Find words</div></a>
+			<a href="comingsoon.html"><div class="quicklink">Practice</div></a>
+			<a href="resources.html"><div class="quicklink">Word lists</div></a>
+		</div>
+		<div id="topbar">
+			<div id="hamburgermenu" onclick="Open()">&#9776;</div>
+			<div id="options">
+				<a href="index.html#topbar"><div class="clickoption">Home</div></a>
+				<a href="index.html#about"><div class="clickoption">About</div></a>
+				<a href="index.html#menu"><div class="clickoption">Discover</div></a>
+				<a href="index.html#contactus"><div class="clickoption">Socials</div> </a>
+			</div>
+		</div>
+	<div id="intake"> 
+			<span id="text">
+				Scrabble Word Checker<br>
+				<span id="subhead">Browse the official Collins Scrabble Wordlist (CSW15) to check if a play is valid.</span>
+			</span>
+			<span id="searchbar">
+				<input type="text" id="input" autocomplete="off" placeholder="Enter word here"><br>
+				<div id="submit" onclick="search()">Check</div>
+
+					<script type="text/javascript">
+						//To execute function on pressing enter
+						input.addEventListener("keyup",function(event){
+							if(event.keyCode==13){
+								event.preventDefault();
+								document.getElementById("submit").click();
+							}
+						})
+					</script>
+			</span>
+	</div>
+	<div id="lol"></div>
+
+	<canvas id="confetti"></canvas>
+	<script type="text/javascript" src="js/confetti.js"></script>
+	<script type="text/javascript" src="js/validity.js"></script>
+
+</body>
+</html>

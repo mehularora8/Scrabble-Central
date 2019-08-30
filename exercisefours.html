@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice - 4s | SC</title>
+	<script type="text/javascript" src="wordlists/twos.js"></script>
+	<script type="text/javascript" src="wordlists/threes.js"></script>
+	<script type="text/javascript" src="wordlists/fours.js"></script>
+	<script type="text/javascript" src="wordlists/fives.js"></script>
+	<script type="text/javascript" src="wordlists/sixes.js"></script>
+	<script type="text/javascript" src="wordlists/sevens.js"></script>
+	<script type="text/javascript" src="wordlists/eights.js"></script>
+	<script type="text/javascript" src="wordlists/nines.js"></script>
+	<script type="text/javascript" src="wordlists/tens.js"></script>
+	<script type="text/javascript" src="wordlists/elevens.js"></script>
+	<script type="text/javascript" src="wordlists/twelves.js"></script>
+	<script type="text/javascript" src="wordlists/thirteens.js"></script>
+	<script type="text/javascript" src="wordlists/fourteens.js"></script>
+	<script type="text/javascript" src="wordlists/fifteens.js"></script>
+	<script type="text/javascript" src="js/exercisesfours.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/exercisesmain.css">
+</head>
+<body onload="append_jumbled()">
+	<div id="sidebar">
+		<div class="quicklink" id="topmost">QUICK LINKS</div>
+		<a href="index.html#topbar"><div class="quicklink">HOME</div></a>
+		<a href="validity.html"><div class="quicklink">Check words</div></a>
+		<a href="wordsearch.html"><div class="quicklink">Find words</div></a>
+		<a href="comingsoon.html"><div class="quicklink">Practice</div></a>
+		<a href="resources.html"><div class="quicklink">Word lists</div></a>
+	</div>
+	<div id="topbar">
+		<div id="hamburgermenu" onclick="Open()">&#9776;</div>
+		<div id="options">
+			<a href="index.html#topbar"><div class="clickoption">Home</div></a>
+			<a href="index.html#about"><div class="clickoption">About</div></a>
+			<a href="index.html#menu"><div class="clickoption">Discover</div></a>
+			<a href="index.html#contactus"><div class="clickoption">Socials</div> </a>
+		</div>
+	</div>
+	<div id="jumbledword"></div>
+	<div id="counter"></div>
+
+	<div id="inputbar">
+		<input type="text" id="answer">
+		<div id="submit" onclick="submit()">Submit</div>
+	</div>
+
+	<div id="solution"></div>
+
+	<div id="actions">
+		<div id="nextq" onclick="next()">Next Question!</div>
+		<div id="reveal" onclick="reveal()">Reveal</div>
+	</div>
+	
+
+</body>
+</html>

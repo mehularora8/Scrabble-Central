@@ -1,0 +1,176 @@
+body{
+	margin:0;
+	padding: 0;
+	overflow-x: hidden;
+	font-family: 'Cera Pro', sans-serif;
+	overflow-y: scroll;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+#topbar{
+	width:100%;
+	height: 10vh;
+}
+
+#sidebar{
+	position: fixed;
+	top: 0;
+	left:0;
+	width:0;
+	height: 100vh;
+	background-color: #111;
+	z-index: 1;
+	overflow-x: hidden;
+  	transition: 0.5s;
+  	padding-top: 60px;
+  	display: flex;
+  	flex-direction: column;
+  	padding-top: 100px;
+}
+
+.quicklink{
+	color: white;
+	margin-bottom: 10px;
+	height: 6vh;
+	font-size: 25px;
+	padding-left: 2vw;
+	padding-top: 12px;
+	vertical-align: middle;
+}
+
+#topmost{
+	margin-bottom: 50px;
+	font-size: 35px;
+	font-weight: bolder;
+}
+
+.quicklink:hover{
+	cursor: pointer;
+	background-color: #362f2e;
+}
+
+#topmost:hover{
+	cursor: default;
+	background-color: #111;
+}
+
+#hamburgermenu{
+	width: 40px;
+	height: 40px;
+	position: relative;
+	left:2vw;
+	top: 30px;
+	font-size: 40px;
+	z-index: 2;
+}
+
+#options{
+	height: 40px;
+	width: 40vw;
+	position: relative;
+	left: 60vw;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.clickoption{
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 22px;
+	padding: 4px;
+}
+
+.clickoption:hover{
+	transition: ease-in 0.5s;
+	border-bottom: 1px solid #111;
+	cursor: pointer;
+}
+
+#hamburgermenu:hover{
+	cursor: pointer;
+}
+
+#return{
+	position: absolute;
+	top:10px;
+	right: 10px;
+	background: url("../images/home.png");
+	width: 35px;
+	height: 35px;
+	background-size: contain;
+}
+
+#lol{
+	width:30vw;
+	height: 20vh;
+	position: absolute;
+	top: 65vh;
+	left: 34.5vw;
+	text-align: center;
+	font-size: 30px;
+}
+
+#intake{
+	width: 100vw;
+	height: 40vh;
+	position: absolute;
+	top: 25vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: bold;
+}
+
+#submit{
+	width: 6vw;
+	border: 1px solid #d0d3d8;
+	border-radius: 8px;
+	padding: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	text-align: center;
+	font-weight: lighter;
+	background-color: #ffdc30;
+}
+
+#input{
+	width: 15vw;
+	border: 1px solid #d0d3d8;
+	border-radius: 8px;
+	padding: 10px;
+	font-size: 20px;
+	margin-right: 5px;
+}
+
+#text{
+	width:100vw;
+	margin-bottom: 50px;
+	font-size: 50px;
+	text-align: center;
+}
+
+#subhead{
+	font-size: 22px;
+	color: #a0a2a5;
+	font-weight: lighter;
+}
+
+#searchbar{
+	display: flex;
+	align-items: center;
+}
+
+
+
+#confetti{
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+	z-index: -5;
+	visibility: visible;
+}
