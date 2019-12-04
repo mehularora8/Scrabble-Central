@@ -130,22 +130,21 @@ a{
 }
 
 .row{
-	padding-left: 16vw;
-	padding-right: 16vw;
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100vw;
-	height: 40vh;
+	height: 15vh;
 	margin-top: 5vh;
 }
 
 
 .box{
-	background: white;
-	display: flex;
-	flex-direction: column;
-	margin:10px;
+	border-radius: 5%;
+	margin:0 10px;
 	width: 16vw;
-	height: 35vh;
+	height: 12vh;
+	line-height: 12vh;
 	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.20);
 }
 
@@ -155,30 +154,9 @@ a{
 	transition-timing-function: ease-in;
 }
 
-.icon{
-	height: 22vh;
-	width: 16vw;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	background: url(../images/documents.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.ex{
-	background: url(../images/practice.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
 .text{
 	height: 10vh;
 	width: 16vw;
 	font-size: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 }

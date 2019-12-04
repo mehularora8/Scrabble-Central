@@ -141,16 +141,19 @@ a{
 	width: 15vw;
 	margin-right: 3vw;
 	font-size: 30px;
+	line-height: 7vh;
 }
 
 #submit{
+	border-radius: 5%;
 	height: 7vh;
 	width: 7vw;
 	margin-right: 3.5vw;
 	font-size: 30px;
-	border:1px solid black;
 	text-align: center;
 	line-height: 7vh;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.20);
+	cursor: pointer;
 }
 
 #actions{
@@ -171,21 +174,25 @@ a{
 }
 
 #reveal{
+	border-radius: 5%;
 	height: 5vh;
 	width: 5vw;
 	font-size: 20px;
-	border:1px solid black;
 	text-align: center;
 	line-height: 5vh;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.20);
+	cursor: pointer;
 }
 
 #nextq{
+	border: 
 	height: 5vh;
 	width: 9vw;
 	font-size: 20px;
-	border:1px solid black;
 	text-align: center;
 	line-height: 5vh;
 	visibility: hidden;
 	margin-right: -5vw;
+	box-shadow: 5px 5px 20px 0 rgba(20,20,20,0.20);
+	cursor: pointer;
 }
