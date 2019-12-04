@@ -131,6 +131,11 @@ function Open() {
 }
 
 window.addEventListener('keypress', function(e){
-	if(e.key==='Enter')
+	if(e.key==='Enter'){
+		if(document.getElementById("nextq").style.visibility == "visible"){
+			next();
+		} else{	
 		submit();
+		}
+	}
 });
